@@ -34,7 +34,6 @@
     "*.d.ts"
   ],
   "publishConfig": {
-    "access": "public",
     "registry": "https://npm.pkg.github.com/"
   },
   "main": "./index.mjs",
@@ -48,7 +47,7 @@
     "test": "node zx.mjs test.mjs",
     "preci": "rm -fr node_modules",
     "ci": "yarn install --frozen-lockfile",
-    "deploy": "yarn publish"
+    "deploy": "yarn publish --access public"
   },
   "dependencies": {
     "@types/fs-extra": "^9.0.13",
