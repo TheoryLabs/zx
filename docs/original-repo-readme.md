@@ -1,10 +1,4 @@
-# ZX 
-> _🍺T️heorylabs/zx_
-
-_**TODO**: explain wtf this is all about_
-
-
----
+# 🐚 zx
 
 ```js
 #!/usr/bin/env zx
