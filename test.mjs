@@ -126,9 +126,9 @@ import {retry} from './experimental.mjs'
   } catch (p) {
     err = p
   }
-  console.log(err)
+  console.error(err)
   assert(err.exitCode > 0)
-  console.log('☝️ Error above is expected')
+  console.error('☝️ Error above is expected')
 }
 
 { // The pipe() throws if already resolved
@@ -230,7 +230,15 @@ import {retry} from './experimental.mjs'
 { // require() is working in ESM
   const {name, version} = require('./package.json')
   assert(typeof name === 'string')
-  console.log(chalk.black.bgYellowBright(` ${name} version is ${version} `))
+  console.log(chalk.whiteBright.bgYellow(` ${name} version is ${version} `))
+}
+
+
+// require() is working in ESM with namespaced exports @theorylabs/zx/pkg
+{
+  const {name, version, exports} = require('@theorylabs/zx/package-manifest')
+  assert(typeof name === 'string')
+  console.log(chalk.whiteBright.bgCyan(` ${name} version is ${version} with exports: ${require('util').inspect(exports, { showHidden: true, depth: null })}`))
 }
 
 console.log(chalk.greenBright(' 🍺 Success!'))
