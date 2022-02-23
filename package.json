@@ -1,19 +1,47 @@
 {
-  "name": "zx",
-  "version": "5.1.0",
+  "name": "@theorylabs/zx",
+  "version": "0.0.1",
+  "private": false,
+  "license": "SEE LICENSE IN 🍺T️HEORYLABS_LICENSE",
   "description": "A tool for writing better scripts.",
-  "main": "./index.mjs",
-  "exports": {
-    ".": "./index.mjs",
-    "./globals": "./globals.mjs",
-    "./experimental": "./experimental.mjs"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheoryLabs/zx.git"
   },
+  "author": {
+    "name" : "Branden Dane",
+    "email" : "Dane@TheoryLabs.dev",
+    "url" : "https://WhoAmI.TheoryLabs.dev/"
+  },
+  "homepage": "https://github.com/TheoryLabs/zx#README",
+  "bugs": {
+    "url" : "https://github.com/TheoryLabs/zx/issues",
+    "email" : "zx-issues@TheoryLabs.dev"
+  },
+  "config": {
+    "ORIGINAL_REPO_URL": "https://github.com/google/zx.git"
+  },
+  "type": "module",
   "types": "index.d.ts",
   "bin": {
     "zx": "zx.mjs"
   },
   "engines": {
     "node": ">= 16.0.0"
+  },
+  "files": [
+    "*.mjs",
+    "*.d.ts"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "@theorylabs:registry": "https://npm.pkg.github.com"
+  },
+  "main": "./index.mjs",
+  "exports": {
+    ".": "./index.mjs",
+    "./globals": "./globals.mjs",
+    "./experimental": "./experimental.mjs"
   },
   "scripts": {
     "test": "node zx.mjs test.mjs"
@@ -30,15 +58,5 @@
     "ps-tree": "^1.2.0",
     "which": "^2.0.2",
     "yaml": "^1.10.2"
-  },
-  "publishConfig": {
-    "registry": "https://wombat-dressing-room.appspot.com"
-  },
-  "files": [
-    "*.mjs",
-    "*.d.ts"
-  ],
-  "repository": "google/zx",
-  "author": "Anton Medvedev <anton@medv.io>",
-  "license": "Apache-2.0"
+  }
 }
