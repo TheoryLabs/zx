@@ -1,22 +1,22 @@
 {
   "name": "@theorylabs/zx",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "license": "SEE LICENSE IN 🍺T️HEORYLABS_LICENSE",
   "description": "A tool for writing better scripts.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheoryLabs/zx.git"
+    "url": "git@github.com:TheoryLabs/zx.git"
   },
   "author": {
-    "name" : "Branden Dane",
-    "email" : "Dane@TheoryLabs.dev",
-    "url" : "https://WhoAmI.TheoryLabs.dev/"
+    "name": "Branden Dane",
+    "email": "Dane@TheoryLabs.dev",
+    "url": "https://WhoAmI.TheoryLabs.dev/"
   },
   "homepage": "https://github.com/TheoryLabs/zx#README",
   "bugs": {
-    "url" : "https://github.com/TheoryLabs/zx/issues",
-    "email" : "zx-issues@TheoryLabs.dev"
+    "url": "https://github.com/TheoryLabs/zx/issues",
+    "email": "zx-issues@TheoryLabs.dev"
   },
   "config": {
     "ORIGINAL_REPO_URL": "https://github.com/google/zx.git"
@@ -35,16 +35,20 @@
   ],
   "publishConfig": {
     "access": "public",
-    "@theorylabs:registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/"
   },
   "main": "./index.mjs",
   "exports": {
     ".": "./index.mjs",
     "./globals": "./globals.mjs",
-    "./experimental": "./experimental.mjs"
+    "./experimental": "./experimental.mjs",
+    "./package-manifest": "./package.json"
   },
   "scripts": {
-    "test": "node zx.mjs test.mjs"
+    "test": "node zx.mjs test.mjs",
+    "preci": "rm -fr node_modules",
+    "ci": "yarn install --frozen-lockfile",
+    "deploy": "yarn publish"
   },
   "dependencies": {
     "@types/fs-extra": "^9.0.13",
