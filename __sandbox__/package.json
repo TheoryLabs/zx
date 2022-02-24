@@ -1,0 +1,25 @@
+{
+  "name": "sandbox",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=16.x"
+  },
+  "type": "module",
+  "main": "./src/index.cjs",
+  "exports": {
+    "import": "./src/main.js",
+    "require": "./src/index.cjs",
+    "default": "./src/main.js"
+  },
+  "scripts": {
+    "dev:esm": "NODE_MODULE_TYPE='esm' node --experimental-modules ./src/main.js",
+    "dev:cjs": "NODE_MODULE_TYPE='cjs' node -r esm ./src/index.cjs",
+    "dev:js": "NODE_MODULE_TYPE='default' node --experimental-specifier-resolution=node ./src/main.js"
+  },
+  "dependencies": {
+    "@theorylabs/zx": "0.0.2",
+    "esm": "^3.2.25"
+  }
+}
