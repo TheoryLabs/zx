@@ -19,7 +19,10 @@
     "email": "zx-issues@TheoryLabs.dev"
   },
   "config": {
-    "ORIGINAL_REPO_URL": "https://github.com/google/zx.git"
+    "ORIGINAL_REPO_URL": "https://github.com/google/zx.git",
+    "ORIGINAL_REPO_README": "https://github.com/google/zx#README",
+    "ORIGINAL_REPO_LICENSE": "https://github.com/google/zx#LICENSE",
+    "ORIGINAL_REPO_PACKAGE_MANIFEST": "https://raw.githubusercontent.com/google/zx/main/package.json"
   },
   "type": "module",
   "types": "index.d.ts",
