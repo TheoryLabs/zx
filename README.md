@@ -480,8 +480,45 @@ await $`pwd`
 EOF
 ```
 
+---
+## Contact
+> _Get in touch! Let's do coffee. Well, err... I suppose it's virtual coffee nowadays._
+
+### Email
+
+👋 _The **"General"** Email_
+> * [**💌HelloWorld**](HelloWorld@TheoryLabs.dev) _(quick link)_
+>> - `HelloWorld@TheoryLabs.dev` _(full link)_
+
+🖖 _The **"Questions/Queries"** Email_
+> * [**❓@TheoryLabs**](❓@TheoryLabs.dev) _(quick link)_
+>> - `whats-up@TheoryLabs.dev` _(full link)_
+
+🤙 _The **"Quick/DM Slidn`"** Email_
+> * [**✏️@TheoryLabs**](✏️@TheoryLabs.dev) _(quick link)_
+>> - `ping@TheoryLabs.dev` _(full link)_
+
+🤘 _The **"Plans/Strategies for Global Domination. Or, Beer."** Email_
+> * [**🍺️@TheoryLabs**](🍺️@TheoryLabs.dev) _(quick link)_
+>> - `🍺️@TheoryLabs.dev` _(full link)_
+
+### Social
+#### Twitter
+
+👾 _The **"Official"** twitterz_
+> * [**@TheoryLabz**](https://twitter.com/TheoryLabz)
+
+🃏 _The **"Absolutely-Not-At-All-Professional"** twitterz_
+> * [**@God_Dane**](https://twitter.com/God_Dane)
+### Slack
+
+🆘 **TheoryLabs on Slack**
+> * [**TheoryLabs Workspace**](https://theorylabsworkspace.slack.com/) _(quick link)_
+>> - `https://theorylabsworkspace.slack.com` _(full link)_
+
+---
 ## License
 
-[Apache-2.0](LICENSE)
-
-Disclaimer: _This is not an officially supported Google product._
+➖ [🔐 **MIT**](🍺️THEORYLABS_LICENSE) ©️ **2021**  
+➖ [🌐 **TheoryLabs.Dev**](https://TheoryLabs.dev) ®️ **TheoryLabs™️**  
+➖ [⚕️ **OpenSource@TheoryLabs.Dev**](OpenSource@TheoryLabs.dev)
